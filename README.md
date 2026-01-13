@@ -1,4 +1,5 @@
 # Anasiw (Clavier)
+Anasiw iga abecku yeldin seg internet n tirra n tutlayt tamaziɣt s usekkil alatini. Ad kwen-iɛawen, ad tsekwjemm isekkilen n tmaziɣt g uselkim neɣ tiliɣri.
 
 ## Agemmay (Alphabet)
 
@@ -13,5 +14,5 @@
 | ṣ / Ṣ | Ṣinṣeg (Siffler) |
 | ṭ / Ṭ | Tiṭ (Oeil) |
 | ẓ / Ẓ | Aẓawan (Musique) |
-| ε / Σ | Σli (Ali) |
+| ε / Ɛ | Ɛli (Ali) |
 
