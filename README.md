@@ -15,4 +15,3 @@ Anasiw iga abecku yeldin seg internet n tirra n tutlayt tamaziɣt s usekkil alat
 | ṭ / Ṭ | Tiṭ (Eye) |
 | ẓ / Ẓ | Aẓawan (Music) |
 | ε / Ɛ | Ɛli (Ali) |
-
