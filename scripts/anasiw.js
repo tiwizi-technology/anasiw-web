@@ -1,30 +1,68 @@
 // === Cache DOM elements ===
 const textarea = document.getElementById("tirra");
-const keyboards = document.querySelectorAll("#charKeyboard, #charKeyboard1");
+const keyboards = document.querySelectorAll("#charKeyboard, #charKeyboard1, #charKeyboard2, #charKeyboard3");
 
 // === Mapping direct mode ===
 const directMap = {
-    c: "č",
-    d: "ḍ",
-    g: "ǧ",
-    h: "ḥ",
-    r: "ṛ",
-    s: "ṣ",
-    t: "ṭ",
-    z: "ẓ",
-    y: "ɣ",
-    e: "ɛ",
-    C: "Č",
-    D: "Ḍ",
-    G: "Ǧ",
-    H: "Ḥ",
-    R: "Ṛ",
-    S: "Ṣ",
-    T: "Ṭ",
-    Z: "Ẓ",
-    Y: "Γ",
-    E: "Ɛ"
+    ⵛ: "ⵞ",
+    ⴷ: "ⴹ",
+    ⵀ: "ⵃ",
+    ⵙ: "ⵚ",
+    ⵜ: "ⵟ",
+    ⵣ: "ⵥ"
 };
+
+const mapTifinagh = {
+    'a': 'ⴰ',
+    'b': 'ⴱ',
+    'c': 'ⵛ',
+    'č': 'ⵞ',
+    'd': 'ⴷ',
+    'ḍ': 'ⴹ',
+    'e': 'ⴻ',
+    'f': 'ⴼ',
+    'g': 'ⴳ',
+    'h': 'ⵀ',
+    'ḥ': 'ⵃ',
+    'i': 'ⵉ',
+    'j': 'ⵊ',
+    'k': 'ⴽ',
+    'l': 'ⵍ',
+    'm': 'ⵎ',
+    'n': 'ⵏ',
+    'p': 'ⵒ',
+    'q': 'ⵇ',
+    'r': 'ⵔ',
+    'ṛ': 'ⵕ',
+    's': 'ⵙ',
+    'ṣ': 'ⵚ',
+    't': 'ⵜ',
+    'ṭ': 'ⵟ',
+    'u': 'ⵓ',
+    'w': 'ⵡ',
+    'x': 'ⵅ',
+    'y': 'ⵢ',
+    'z': 'ⵣ',
+    'ẓ': 'ⵥ',
+    'ɛ': 'ⵄ',
+    'ɣ': 'ⵖ'
+};
+
+function shortcut1() {
+    let text = textarea.value;
+    let converted = "";
+
+    for (let char of text) {
+        converted += mapTifinagh[char] || char;
+    }
+
+    textarea.value = converted;
+}
+
+// Focus automatique au chargement
+function focusTextarea() {
+    document.getElementById("tirra").focus();
+}
 
 // === Keyboard click handler (delegation) ===
 keyboards.forEach(keyboard => {
